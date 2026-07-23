@@ -1,0 +1,27 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Responsive table scroll */
+.ant-table-wrapper {
+  overflow-x: auto;
+}
+
+/* Smooth theme transition */
+.ant-layout,
+.ant-card,
+.ant-table {
+  transition: background-color 0.2s, color 0.2s;
+}
+
+@media (max-width: 576px) {
+  .ant-drawer-content-wrapper {
+    width: 100% !important;
+  }
+}
